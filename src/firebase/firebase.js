@@ -1,6 +1,9 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
+require("firebase/firestore");
+
+
 let firebaseConfig = {
     apiKey: "AIzaSyDCPQKUOnBKvEezIJHybDOHKhKKDY8Fm0U",
     authDomain: "artem-test-5ded9.firebaseapp.com",
