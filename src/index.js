@@ -4,20 +4,22 @@ import './index.css';
 import App from './App';
 import {compose, createStore, applyMiddleware} from "redux";
 import {Provider} from 'react-redux'
-import mainReducer from "./store/reducers/mainReducer";
+import rootReducer from "./store/reducers/rootReducer";
 import thunk from "redux-thunk";
-import { reduxFirestore, getFirestore } from 'redux-firestore'
+import { reduxFirestore, getFirestore, createFirestoreInstance } from 'redux-firestore'
 import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase'
 import firebaseConfig from './firebase/firebase'
 import firebase from 'firebase/app'
 
-const store = createStore(mainReducer, compose(
+const store = createStore(rootReducer, compose(
     applyMiddleware(thunk.withExtraArgument({getFirestore, getFirebase})),
     reduxFirestore(firebaseConfig),
 ))
 
+
 const firebaseProps = {
     firebase,
+    createFirestoreInstance,
     config: firebaseConfig,
     dispatch: store.dispatch,
     userProfile: 'users',
@@ -33,3 +35,4 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
+

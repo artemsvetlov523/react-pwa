@@ -38,7 +38,7 @@ class SignIn extends Component{
     render() {
 
         if (this.props.auth.uid) {
-            return <Redirect to='/main'/>
+            return <Redirect to='/home'/>
         }
 
         const {showRegisterForm} = this.state

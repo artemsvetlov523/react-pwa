@@ -1,0 +1,227 @@
+.home {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #F9F9FB;
+    padding-bottom: 100px;
+}
+
+.header {
+    width: 100%;
+    height: 340px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerCities {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: absolute;
+    top: 86%;
+    left: 0;
+    right: 0;
+}
+
+.headerCities button {
+    background: #4552CB none;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    height: 42px;
+}
+
+.headerCities button:hover {
+    background: #467FE0 none;
+}
+
+/*homeContainer*/
+
+.flightTicket {
+    width: 90%;
+    margin: 40px auto;
+    height: 270px;
+    cursor: pointer;
+}
+.upTicket {
+    width: 100%;
+    box-shadow: 0 0 20px 0 #F7F6FA, 0 5px 5px 0 #F7F6FA;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 40px 40px 0 0;
+}
+
+.upTicket:before {
+    content: "";
+    display: block;
+    background: #F9F9FB;
+    position: absolute;
+    bottom: -9px;
+    left: -9px;
+    width: 27px;
+    height: 27px;
+    border-radius: 20px;
+}
+
+.upTicket:after {
+    content: "";
+    display: block;
+    background: #F9F9FB;
+    position: absolute;
+    bottom: -9px;
+    right: -9px;
+    width: 27px;
+    height: 27px;
+    border-radius: 20px;
+}
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.path small {
+    color: #D4D9E0;
+    white-space: nowrap;
+}
+
+.path .flightTime {
+    border-top: 2px dashed rgb(235, 236, 249);
+    width: 90%;
+    margin-top: 30px;
+}
+
+.path .flightTime p:first-of-type {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bottomTicket {
+    width: 100%;
+    box-shadow: 0 0 20px 0 #F7F6FA, 0 5px 5px 0 #F7F6FA;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 0 0 40px 40px;
+}
+
+.bottomTicket:before {
+    content: "";
+    display: block;
+    background: #F9F9FB;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 27px;
+    height: 27px;
+    border-radius: 20px;
+}
+
+.bottomTicket:after {
+    content: "";
+    display: block;
+    background: #F9F9FB;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    width: 27px;
+    height: 27px;
+    border-radius: 20px;
+}
+
+.bottomTicketContent {
+    border-top: 2px solid #F3F2F8;
+    border-top-style: dashed;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bottomTicket .bottomTicketContent:before {
+    content: "";
+    display: block;
+    background: #fff;
+    position: absolute;
+    bottom: -9px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.bottomTicket .bottomTicketContent:after{
+    content: "";
+    display: block;
+    background: #fff;
+    position: absolute;
+    bottom: -9px;
+    right: -9px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.bottomTicketContentContainer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.bottomTicketContent p {
+    font-weight: 500;
+    font-size: 18px;
+    width: 45px;
+    text-align: right;
+}
+
+.flightNumber {
+    width: 60%;
+    text-align: left;
+}
+
+.terminal {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.gate {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .headerCities {
+        top: 78%;
+    }
+}
+
+@media (max-width: 425px) {
+    .headerCities {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .bottomTicketContent small {
+        white-space: nowrap;
+    }
+}
